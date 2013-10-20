@@ -10,6 +10,7 @@ class BinaryTreeUnbalanced
 private:
     int size;
     //int (*cmp)(void*, void*);
+
     class Node
     {
     public:
@@ -34,6 +35,7 @@ private:
         }
     };
     Node* root;
+    Node* getSuccessor(Node* node);
 
 public:
     bool search(string value);
